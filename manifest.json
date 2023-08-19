@@ -1,0 +1,16 @@
+{
+    "name":"Uffe",
+    "short_name":"Uffe",
+    "manifest_version":2,
+    "description":"Super simple extension which attempts to replace all mentions of 'Ulf Kristersson' with 'Uffe'.",
+    "author":"lxove",
+    "version":"1.0",
+    "content_scripts":[
+        {
+            "matches":["http://*/*", "https://*/*"],
+            "all_frames":true,
+            "js":["uffe.js"],
+            "run_at":"document_end"
+        }
+    ]
+}
